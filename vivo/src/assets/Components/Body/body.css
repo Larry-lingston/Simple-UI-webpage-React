@@ -1,0 +1,59 @@
+  /* Style for the grid container */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5,1fr); /* 5 columns in the upper row */
+    grid-gap: 20px; /* Gap between boxes */
+    width: 92%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the grid */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  /* Style for individual boxes */
+  .box {
+    align-items: baseline;
+    justify-content: baseline;
+    height: 200px;
+    background-color: white;
+    padding-left: 20px;
+  }
+  .box:nth-child(6) {
+    color: transparent;
+    background-color: transparent; /* Transparent blue (adjust values and alpha as needed) */
+  }
+  .box:nth-child(6):hover {
+    color: transparent;
+    background-image: none; /* Transparent blue (adjust values and alpha as needed) */
+  }
+  .box:hover {
+    background-image: url(../../images/button.png);
+    background-repeat: no-repeat;
+    text-decoration: underline;
+    color: blue;
+  }
+  h2{
+    padding-left: 50px;
+  }
+  .p{
+    flex-wrap: wrap;
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  .imgtg{
+    margin-top: 90px;
+    height: 40px;
+    width: 40px;
+  }
+  @media (max-width: 1000px) {
+    .grid-container {
+      grid-template-columns: repeat(3,1fr); /* 5 columns in the upper row */
+    }
+    .body{
+      margin-top: 30px;
+    }
+  }
+  @media (max-width: 580px) {
+    .grid-container {
+      grid-template-columns: repeat(2,1fr); /* 5 columns in the upper row */
+    }
+  }
